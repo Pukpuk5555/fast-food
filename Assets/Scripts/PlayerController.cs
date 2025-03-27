@@ -18,7 +18,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MoveByKB();
-        Jump();
+        
+        if (Input.GetKeyDown(KeyCode.Space) && isGround)
+        {
+            Jump();
+        }
     }
 
     private void MoveByKB()
@@ -28,10 +32,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isGround)
-        {
-
-        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

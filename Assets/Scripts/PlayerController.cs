@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Reflection;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,17 +13,31 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Debug.Log(rb);
+
+        if (rb == null) return;
+
+        FieldInfo velocityField = typeof(Rigidbody2D).GetField("velocity", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+        if (velocityField != null)
+        {
+            Vector2 velocity = (Vector2)velocityField.GetValue(rb);
+            Debug.Log("Velocity: " + velocity);
+        }
+        else
+        {
+            Debug.LogError("‰¡Ëæ∫ field velocity „π Rigidbody2D");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        MoveByKB();
+        /*MoveByKB();
         
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             Jump();
-        }
+        }*/
     }
 
     private void MoveByKB()

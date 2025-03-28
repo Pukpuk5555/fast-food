@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Debug.Log(rb);
 
-        if (rb == null) return;
+        /*if (rb == null) return;
 
         FieldInfo velocityField = typeof(Rigidbody2D).GetField("velocity", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
         if (velocityField != null)
@@ -26,28 +26,29 @@ public class PlayerController : MonoBehaviour
         else
         {
             Debug.LogError("‰¡Ëæ∫ field velocity „π Rigidbody2D");
-        }
+        }*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*MoveByKB();
-        
+        MoveByKB();
+
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             Jump();
-        }*/
+        }
     }
 
     private void MoveByKB()
     {
         float moveInput = Input.GetAxis("Horizontal");
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocityY);
     }
 
     private void Jump()
     {
-        
+        rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForece);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

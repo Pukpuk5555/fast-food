@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8518782243967538448}
   - component: {fileID: 9086087896523522485}
   - component: {fileID: 1013564383115430952}
+  - component: {fileID: 7465781425700691564}
   m_Layer: 0
   m_Name: PlayerNormal
   m_TagString: Untagged
@@ -273,5 +274,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781113451ea540d4b82284971f9402cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fatValue: 10
+  fatValue: 15
   fatValueText: {fileID: 0}
+--- !u!114 &7465781425700691564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235135755542773892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01523b233174f3c438742289a42ec617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthySprite: {fileID: 21300000, guid: c993c5b7470beb648b116dff25199e59, type: 3}
+  normalSprite: {fileID: 21300000, guid: e7f800701e6d84347981d9eb71c9f2b8, type: 3}
+  fatSprite: {fileID: 21300000, guid: 493b5fbd19bbe534bb466365b5cbe90f, type: 3}
+  superFatSprite: {fileID: 21300000, guid: df8ec23cbe9a67147a1a09dc45491080, type: 3}
+  healthyAnim: {fileID: 9100000, guid: 4aaae3f75068be648abb47fed18e782f, type: 2}
+  normalAnim: {fileID: 9100000, guid: 68bd3b04b28cea741818fd7562829da6, type: 2}
+  fatAnim: {fileID: 9100000, guid: c3deae42fa9a0584cb20bafbbfbd90ae, type: 2}
+  superFatAnim: {fileID: 9100000, guid: 8d55ee16a6910c940867477258f5fd9e, type: 2}

@@ -4,6 +4,8 @@ using TMPro;
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private int fatValue = 100;
+    public int FatValue { get { return fatValue; } }
+
     [SerializeField] private TextMeshProUGUI fatValueText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +22,7 @@ public class PlayerStats : MonoBehaviour
     public void ReduceFat(int fat)
     {
         fatValue -= fat;
-        //fatValue = Mathf.Max(fatValue, 0);
+        fatValue = Mathf.Max(fatValue, 0);
         UpdateUI();
     }
 

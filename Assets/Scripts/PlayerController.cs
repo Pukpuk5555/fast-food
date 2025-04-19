@@ -3,8 +3,13 @@ using System.Reflection;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpForece = 10f;
+    [SerializeField] 
+    private float moveSpeed = 5f;
+    public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
+
+    [SerializeField] 
+    private float jumpForece = 7f;
+    public float JumpForce { get { return jumpForece; } set { jumpForece = value; } }
 
     private Rigidbody2D rb;
     private bool isGround;
@@ -14,19 +19,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Debug.Log(rb);
-
-        /*if (rb == null) return;
-
-        FieldInfo velocityField = typeof(Rigidbody2D).GetField("velocity", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
-        if (velocityField != null)
-        {
-            Vector2 velocity = (Vector2)velocityField.GetValue(rb);
-            Debug.Log("Velocity: " + velocity);
-        }
-        else
-        {
-            Debug.LogError("‰¡Ëæ∫ field velocity „π Rigidbody2D");
-        }*/
     }
 
     // Update is called once per frame

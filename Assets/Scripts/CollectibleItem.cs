@@ -32,7 +32,7 @@ public class CollectibleItem : MonoBehaviour
                     player.IncreaseFat(10);
                     break;
             }
-            Destroy(gameObject);
+            Destroy(gameObject);    
         }
     }
 }

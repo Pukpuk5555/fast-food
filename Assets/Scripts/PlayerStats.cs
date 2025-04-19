@@ -12,12 +12,6 @@ public class PlayerStats : MonoBehaviour
         UpdateUI();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void UpdateUI()
     {
         fatValueText.text = "Fat: " + fatValue.ToString();

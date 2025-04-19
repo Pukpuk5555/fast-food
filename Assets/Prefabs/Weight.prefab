@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1631317183648045018}
   - component: {fileID: 2817298790071229869}
   - component: {fileID: 2462918969065091992}
+  - component: {fileID: 4127884154233542167}
   m_Layer: 0
   m_Name: Weight
   m_TagString: Untagged
@@ -141,3 +142,16 @@ PolygonCollider2D:
       - {x: 0.25, y: -0.09375}
       - {x: 0.1875, y: -0.0625}
   m_UseDelaunayMesh: 0
+--- !u!114 &4127884154233542167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5514260081574921240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4c248840b9832408a3b9b0aff8b97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 1

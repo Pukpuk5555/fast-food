@@ -101,6 +101,11 @@ public class Player : MonoBehaviour
         {
             Respawn();
         }
+
+        if (collision.collider.CompareTag("Dead"))
+        {
+            Respawn();
+        }
     }
 
     private void Respawn()

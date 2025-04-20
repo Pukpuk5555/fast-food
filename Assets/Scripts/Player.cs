@@ -7,18 +7,24 @@ public class Player : MonoBehaviour
     private Animator animator;
 
     private PlayerController playerController;
+    private RuntimeAnimatorController currentAnim;
+    private Rigidbody2D rb;
 
+    [Header("Player Sprite")]
     [SerializeField]
     private Sprite healthySprite, normalSprite, fatSprite, superFatSprite;
 
+    [Header("Player Animator")]
     [SerializeField]
     private RuntimeAnimatorController healthyAnim, normalAnim, fatAnim, superFatAnim;
 
-    private RuntimeAnimatorController currentAnim;
+    [SerializeField] GameObject respawnPoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+
         stats = GetComponent<PlayerStats>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -74,5 +80,28 @@ public class Player : MonoBehaviour
             currentAnim = newAnim;
             animator.runtimeAnimatorController = currentAnim;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Checkpoint"))
+        {
+            respawnPoint.transform.position = collision.transform.position;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.CompareTag("Trap"))
+        {
+            Destroy(gameObject);
+            Respawn();
+        }
+    }
+
+    private void Respawn()
+    {
+        rb.linearVelocity = Vector2.zero;
+        transform.position = respawnPoint.transform.position;
     }
 }

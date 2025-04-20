@@ -4300,6 +4300,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1391135341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7840321286172655215, guid: cd67a3b2bc0a67b42a36bd287d41c322, type: 3}
+  m_PrefabInstance: {fileID: 661054008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1423284086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5315,6 +5320,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7465781425700691564, guid: f60ca8ef5644a8d4c822a7734dd508ae, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1391135341}
+    - target: {fileID: 7465781425700691564, guid: f60ca8ef5644a8d4c822a7734dd508ae, type: 3}
+      propertyPath: CheckPointChecked
+      value: 
+      objectReference: {fileID: 21300000, guid: f2906f4f0c7dde04793628c464eeb854, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

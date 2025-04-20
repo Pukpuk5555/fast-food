@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4660812502043387038}
   - component: {fileID: 6015213265616026334}
   - component: {fileID: 7861847925657908769}
+  - component: {fileID: 9188886226674189474}
   m_Layer: 0
   m_Name: Checkpoint1
   m_TagString: Checkpoint
@@ -144,3 +145,17 @@ PolygonCollider2D:
       - {x: 0.328125, y: -0.3671875}
       - {x: -0.0390625, y: -0.3125}
   m_UseDelaunayMesh: 0
+--- !u!114 &9188886226674189474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840321286172655215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ec4afe7888a1749b5001f3160ec1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activatedSprite: {fileID: 21300000, guid: f2906f4f0c7dde04793628c464eeb854, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 0e1294487af474b4da5afa02741176a0, type: 3}

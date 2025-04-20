@@ -86,7 +86,12 @@ public class Player : MonoBehaviour
     {
         if(collision.CompareTag("Checkpoint"))
         {
-            respawnPoint.transform.position = collision.transform.position;
+            Checkpoint checkpoint = collision.GetComponent<Checkpoint>();
+
+            if (checkpoint != null)
+            {
+                checkpoint.Activate(); 
+            }
         }
     }
 
@@ -94,7 +99,6 @@ public class Player : MonoBehaviour
     {
         if(collision.collider.CompareTag("Trap"))
         {
-            Destroy(gameObject);
             Respawn();
         }
     }
@@ -102,6 +106,6 @@ public class Player : MonoBehaviour
     private void Respawn()
     {
         rb.linearVelocity = Vector2.zero;
-        transform.position = respawnPoint.transform.position;
+        transform.position = CheckpointManager.Instance.GetRespawnPosition();
     }
 }

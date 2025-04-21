@@ -17,7 +17,7 @@ public class CameraFollow : MonoBehaviour
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.y);
 
-        Debug.Log("Camera Y: " + transform.position.y + " | Player Y: " + player.transform.position.y);
+        //Debug.Log("Camera Y: " + transform.position.y + " | Player Y: " + player.transform.position.y);
 
         //Clamp Cam
         /*float camHalfHeight = Camera.main.orthographicSize;

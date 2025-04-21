@@ -3919,6 +3919,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapID
+      value: 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapType
+      value: French Fries
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: levelName
+      value: level_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
       value: frenfried (3)
@@ -4239,6 +4251,18 @@ PrefabInstance:
     - target: {fileID: 6122813942550473985, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapID
+      value: 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapType
+      value: French Fries
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: levelName
+      value: level_1
       objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
@@ -6484,6 +6508,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapID
+      value: 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapType
+      value: French Fries
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: levelName
+      value: level_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
       value: frenfried
@@ -6967,6 +7003,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapID
+      value: 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapType
+      value: French Fries
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: levelName
+      value: level_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
       value: frenfried (4)
@@ -7354,6 +7402,18 @@ PrefabInstance:
     - target: {fileID: 6122813942550473985, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapID
+      value: 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: trapType
+      value: French Fries
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
+      propertyPath: levelName
+      value: level_1
       objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6122813942550473985}
   - component: {fileID: 6491351336184890630}
   - component: {fileID: 6426866201306435904}
+  - component: {fileID: 6955141528573998580}
+  - component: {fileID: -2783851957114588197}
   m_Layer: 0
   m_Name: frenfried
   m_TagString: Trap
@@ -162,3 +164,30 @@ PolygonCollider2D:
       - {x: 0.5, y: 0.3515625}
       - {x: 0.4375, y: 0.3515625}
   m_UseDelaunayMesh: 0
+--- !u!114 &6955141528573998580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660893347803193294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3cc3728e7085b42be48a2203abd6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapID: 
+  trapType: 
+  levelName: 
+--- !u!114 &-2783851957114588197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660893347803193294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1538133f5e0dd447b72f7ec9ea65d86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -26,6 +26,12 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
+
     private void PauseGame()
     {
         if(!isPause)
@@ -45,5 +51,11 @@ public class SceneChanger : MonoBehaviour
             Time.timeScale = 1f;
             isPause = false;
         }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game is Quit.");
     }
 }

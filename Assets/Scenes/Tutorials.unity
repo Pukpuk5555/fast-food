@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb2db28f742277642a2bcc216064a011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: Map1
+  sceneNameToLoad: LevelScene
   pauseUI: {fileID: 0}
 --- !u!1 &684044609
 GameObject:

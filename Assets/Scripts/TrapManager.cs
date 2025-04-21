@@ -64,13 +64,22 @@ public class TrapManager : MonoBehaviour
             trapHitCount[levelName]++;
         }
 
-        // ส่ง event ไปยัง Unity Analytics
+        /*// ส่ง event ไปยัง Unity Analytics
         AnalyticsService.Instance.CustomData("Trap_Hit", new()
         {
             { "level", levelName },
             { "trapType", trapType },
             { "hitCount", trapHitCount[levelName] }  // ส่งข้อมูลจำนวนครั้งที่โดน
-        });
+        });*/
+
+        CustomEvent trapHitEvent = new CustomEvent("Trap_Hit")
+        {
+            { "level", levelName },
+            { "trapType", trapType },
+            { "hitCount", trapHitCount[levelName] }
+        };
+
+        AnalyticsService.Instance.RecordEvent(trapHitEvent);
 
         Debug.Log($"บันทึก Analytics: Level = {levelName}, Trap = {trapType}, Hit Count = {trapHitCount[levelName]}");
     }

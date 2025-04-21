@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7465781425700691564}
   m_Layer: 0
   m_Name: PlayerNormal
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,3 +296,5 @@ MonoBehaviour:
   normalAnim: {fileID: 9100000, guid: 68bd3b04b28cea741818fd7562829da6, type: 2}
   fatAnim: {fileID: 9100000, guid: c3deae42fa9a0584cb20bafbbfbd90ae, type: 2}
   superFatAnim: {fileID: 9100000, guid: 8d55ee16a6910c940867477258f5fd9e, type: 2}
+  respawnPoint: {fileID: 0}
+  finishGameUI: {fileID: 0}

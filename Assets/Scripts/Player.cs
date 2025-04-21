@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] GameObject respawnPoint;
 
+    [SerializeField] private GameObject finishGameUI;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +32,8 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
 
         playerController = GetComponent<PlayerController>();
+
+        finishGameUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -92,6 +96,12 @@ public class Player : MonoBehaviour
             {
                 checkpoint.Activate(); 
             }
+        }
+
+        if(collision.CompareTag("Exit"))
+        {
+            Time.timeScale = 0f;
+            finishGameUI.SetActive(true);
         }
     }
 

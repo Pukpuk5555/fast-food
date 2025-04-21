@@ -8,6 +8,8 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] private GameObject pauseUI;
     private bool isPause = false;
 
+    public static SceneChanger instance;
+
     public void LoadScene()
     {
         if(!string.IsNullOrEmpty(sceneNameToLoad))
@@ -57,5 +59,10 @@ public class SceneChanger : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Game is Quit.");
+    }
+
+    public void LevelScene()
+    {
+        SceneManager.LoadScene(3);
     }
 }

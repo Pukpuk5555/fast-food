@@ -1636,6 +1636,7 @@ GameObject:
   - component: {fileID: 2115568619}
   - component: {fileID: 2115568618}
   - component: {fileID: 2115568617}
+  - component: {fileID: 2115568620}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -1706,9 +1707,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Tutorials, Assembly-CSharp
-        m_MethodName: BackToTut1
+      - m_Target: {fileID: 2115568620}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1756,6 +1757,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115568615}
   m_CullTransparentMesh: 1
+--- !u!114 &2115568620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115568615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2db28f742277642a2bcc216064a011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameToLoad: 
+  pauseUI: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

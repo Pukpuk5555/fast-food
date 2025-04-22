@@ -56,7 +56,7 @@ public class TrapManager : MonoBehaviour
     }
 
     // ฟังก์ชันสำหรับส่งข้อมูลเมื่อผู้เล่นโดน trap
-    public void PlayerHitTrap(string levelName, string trapType)
+    public void PlayerHitTrap(string levelName, string trapID, string trapType)
     {
         // เพิ่มจำนวนการโดนกับดักใน level นั้น
         if (trapHitCount.ContainsKey(levelName))
@@ -75,6 +75,7 @@ public class TrapManager : MonoBehaviour
         CustomEvent trapHitEvent = new CustomEvent("Trap_Hit")
         {
             { "level", levelName },
+            { "trapID", trapID },
             { "trapType", trapType },
             { "hitCount", trapHitCount[levelName] }
         };

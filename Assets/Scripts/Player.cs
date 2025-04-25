@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     private PlayerStats stats;
@@ -9,6 +10,15 @@ public class Player : MonoBehaviour
     private PlayerController playerController;
     private RuntimeAnimatorController currentAnim;
     private Rigidbody2D rb;
+
+    [Header("Health System")]
+    [SerializeField] private int maxHealth = 3;
+    private int currentHealth;
+    [SerializeField] private GameObject gameOverUI;
+    
+    [Header("Heart UI")]
+    [SerializeField] private Image[] hearts;
+    [SerializeField] private Sprite heartFull,heartEmpty;
 
     [Header("Player Sprite")]
     [SerializeField]
@@ -34,6 +44,10 @@ public class Player : MonoBehaviour
         playerController = GetComponent<PlayerController>();
 
         finishGameUI.SetActive(false);
+
+        currentHealth = maxHealth;
+        gameOverUI.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -88,6 +102,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Bullet"))
+        {
+            TakeDamage();
+        }
+        
         if(collision.CompareTag("Checkpoint"))
         {
             Checkpoint checkpoint = collision.GetComponent<Checkpoint>();
@@ -109,18 +128,68 @@ public class Player : MonoBehaviour
     {
         if(collision.collider.CompareTag("Trap"))
         {
-            Respawn();
+            TakeDamage();
+            //Respawn();
         }
 
         if (collision.collider.CompareTag("Dead"))
         {
+            TakeDamage();
+            //Respawn();
+        }
+    }
+	public void TakeDamage()
+    {
+        currentHealth--;
+        UpdateHearts();
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+        else
+        {
             Respawn();
         }
+    }
+
+    private void UpdateHearts()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentHealth)
+            {
+                hearts[i].sprite = heartFull;
+            }
+            else
+            {
+                hearts[i].sprite = heartEmpty;
+            }
+        }
+    }
+
+    private void Die()
+    {
+        Time.timeScale = 0f; // หยุดเวลา
+        gameOverUI.SetActive(true); // แสดงจบเกม
     }
 
     private void Respawn()
     {
         rb.linearVelocity = Vector2.zero;
         transform.position = CheckpointManager.Instance.GetRespawnPosition();
+        
+    }
+
+	// ปุ่มกดใน UI
+    public void Retry()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // โหลดฉากเดิม
+    }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu"); // ตั้งชื่อฉากเมนูว่า MainMenu
     }
 }

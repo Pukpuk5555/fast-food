@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -1601990181343678796}
   m_Layer: 0
   m_Name: Bullet_sauce
-  m_TagString: Trap
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

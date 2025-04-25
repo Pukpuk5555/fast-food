@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - Dead
   - Exit
+  - Bullet
   layers:
   - Default
   - TransparentFX

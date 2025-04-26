@@ -145,7 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1557811833586218431}
   m_Layer: 0
-  m_Name: monster
+  m_Name: SauseMonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

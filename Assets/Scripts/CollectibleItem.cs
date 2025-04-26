@@ -4,7 +4,8 @@ public enum ItemType
     Salad,
     Weight,
     Burger,
-    Cola
+    Cola,
+    Energy
 }
 
 public class CollectibleItem : MonoBehaviour
@@ -14,6 +15,7 @@ public class CollectibleItem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerStats player = other.GetComponent<PlayerStats>();
+        PlayerController controller = other.GetComponent<PlayerController>();
 
         if(player != null)
         {
@@ -30,6 +32,9 @@ public class CollectibleItem : MonoBehaviour
                     break;
                 case ItemType.Cola:
                     player.IncreaseFat(10);
+                    break;
+                case ItemType.Energy:
+                    controller.StartSpeedBoost();
                     break;
             }
             Destroy(gameObject);    

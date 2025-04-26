@@ -177,7 +177,6 @@ public class Player : MonoBehaviour
     {
         rb.linearVelocity = Vector2.zero;
         transform.position = CheckpointManager.Instance.GetRespawnPosition();
-        
     }
 
 	// ปุ่มกดใน UI

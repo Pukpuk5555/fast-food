@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7687128782083521240
+--- !u!1 &2358461892973083925
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2493131822603337079}
-  - component: {fileID: 7177754313992156437}
-  - component: {fileID: 280967522171773623}
+  - component: {fileID: 4227299928426318728}
+  - component: {fileID: 4011455181949534921}
+  - component: {fileID: 7589767414242229545}
+  - component: {fileID: 6203591729401414414}
   m_Layer: 0
-  m_Name: Exit
-  m_TagString: Exit
+  m_Name: Energy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2493131822603337079
+--- !u!4 &4227299928426318728
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7687128782083521240}
+  m_GameObject: {fileID: 2358461892973083925}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.497, y: -3.495, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.93, y: -1.6916845, z: 0.022387799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7177754313992156437
+--- !u!212 &4011455181949534921
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7687128782083521240}
+  m_GameObject: {fileID: 2358461892973083925}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,25 +77,25 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 76a3f80430bd0724b9e58dde13016b72, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: e6703f4dabc64eb4891006e5bb5365b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &280967522171773623
+--- !u!60 &7589767414242229545
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7687128782083521240}
+  m_GameObject: {fileID: 2358461892973083925}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -118,7 +119,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -126,19 +127,37 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.4902954, y: 0.49805927}
-      - {x: -0.4927311, y: 0.074931145}
-      - {x: -0.23219109, y: 0.06692457}
-      - {x: -0.24243736, y: -0.50388145}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.40625}
-      - {x: 0.40625, y: 0.5}
+    - - {x: 0.058920383, y: 0.2521217}
+      - {x: -0.067255974, y: 0.2540114}
+      - {x: -0.065909386, y: 0.17369175}
+      - {x: -0.108438015, y: 0.13745451}
+      - {x: -0.12448311, y: 0.09057927}
+      - {x: -0.12289786, y: -0.04402852}
+      - {x: -0.124159336, y: -0.20471025}
+      - {x: -0.09575558, y: -0.23596048}
+      - {x: 0.09976721, y: -0.23395467}
+      - {x: 0.12849522, y: -0.2095623}
+      - {x: 0.12648916, y: 0.10335803}
+      - {x: 0.06567049, y: 0.17579007}
   m_UseDelaunayMesh: 0
+--- !u!114 &6203591729401414414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358461892973083925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4c248840b9832408a3b9b0aff8b97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 4

@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Reflection;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] 
     private float jumpForece = 7f;
     public float JumpForce { get { return jumpForece; } set { jumpForece = value; } }
+
+    [SerializeField] private float bootSpeed = 10f;
+    [SerializeField] private float bootDuration = 5f;
+    private bool isBoosting = false;
 
     private Rigidbody2D rb;
     private bool isGround;
@@ -57,5 +61,24 @@ public class PlayerController : MonoBehaviour
         {
             isGround = false;
         }
+    }
+
+    public void StartSpeedBoost()
+    {
+        if (!isBoosting)
+            StartCoroutine(SpeedBoost());
+    }
+
+    private IEnumerator SpeedBoost()
+    {
+        isBoosting = true;
+
+        float originalSpeed = moveSpeed;
+        moveSpeed = bootSpeed;
+
+        yield return new WaitForSeconds(bootDuration);
+
+        moveSpeed = originalSpeed;
+        isBoosting = false;
     }
 }

@@ -4353,7 +4353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapID
-      value: 01
+      value: 014
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapType
@@ -4361,7 +4361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: levelName
-      value: level_1
+      value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
@@ -4822,7 +4822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapID
-      value: 01
+      value: 013
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapType
@@ -4830,7 +4830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: levelName
-      value: level_1
+      value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
@@ -7127,7 +7127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapID
-      value: 01
+      value: 011
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapType
@@ -7135,7 +7135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: levelName
-      value: level_1
+      value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
@@ -7774,7 +7774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapID
-      value: 01
+      value: 015
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapType
@@ -7782,7 +7782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: levelName
-      value: level_1
+      value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name
@@ -8458,7 +8458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapID
-      value: 01
+      value: 012
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: trapType
@@ -8466,7 +8466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955141528573998580, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: levelName
-      value: level_1
+      value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 7660893347803193294, guid: fe8da507287c79a469e4413d0dc79000, type: 3}
       propertyPath: m_Name

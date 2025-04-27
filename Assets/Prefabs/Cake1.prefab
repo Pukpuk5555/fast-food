@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1787346864131854465}
   - component: {fileID: 3824026631507580249}
   - component: {fileID: 138165606803995783}
+  - component: {fileID: 6912114191461717461}
+  - component: {fileID: 2924890616444571148}
   m_Layer: 0
   m_Name: Cake1
   m_TagString: Trap
@@ -141,3 +143,30 @@ PolygonCollider2D:
       - {x: 0.1875, y: -0.09375}
       - {x: 0.078125, y: 0.078125}
   m_UseDelaunayMesh: 0
+--- !u!114 &6912114191461717461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625934555020811984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3cc3728e7085b42be48a2203abd6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapID: 0
+  trapType: Cake
+  levelName: Level
+--- !u!114 &2924890616444571148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625934555020811984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1538133f5e0dd447b72f7ec9ea65d86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

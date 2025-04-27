@@ -2865,7 +2865,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1039411970}
+      - m_Target: {fileID: 1400111916}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -8580,10 +8580,10 @@ SceneRoots:
   - {fileID: 680949967}
   - {fileID: 731015493}
   - {fileID: 212499875}
+  - {fileID: 1400111918}
+  - {fileID: 73608706}
   - {fileID: 1782639688}
   - {fileID: 121571294}
   - {fileID: 448960909}
   - {fileID: 1674017852}
   - {fileID: 759301612}
-  - {fileID: 1400111918}
-  - {fileID: 73608706}

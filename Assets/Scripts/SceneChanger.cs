@@ -14,6 +14,7 @@ public class SceneChanger : MonoBehaviour
     {
         if(!string.IsNullOrEmpty(sceneNameToLoad))
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene(sceneNameToLoad);
             Debug.Log("Open " + sceneNameToLoad);
         }

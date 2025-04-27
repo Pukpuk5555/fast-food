@@ -177,6 +177,11 @@ public class Player : MonoBehaviour
     {
         rb.linearVelocity = Vector2.zero;
         transform.position = CheckpointManager.Instance.GetRespawnPosition();
+        EnemyFollow[] enemies = FindObjectsOfType<EnemyFollow>();
+        foreach (var enemy in enemies)
+        {
+            enemy.ResetPosition();
+        }
     }
 
 	// ปุ่มกดใน UI

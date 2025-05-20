@@ -2,6 +2,7 @@
 
 This project is part of the GI124 Visual Scripting (Year 2, Semester 1) and GI453 Game Analytics (Year 3, Semester 2)
 <br>**📃[GDD](https://docs.google.com/document/d/1eh4oKPaPQHaeSnb1EYinE3SCry7EzQR7qnGkr00m1BY/edit?usp=sharing)**
+**📃[Project Description](https://www.canva.com/design/DAGmBZpkvvM/GhzzHob0aGunCvuyPwRPnA/edit?utm_content=DAGmBZpkvvM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
 
 ### About Project
 This project began in the Visual Scripting course, where I created the first prototype using tools like GameMaker. My friend and I used visual scripting to implement the full core systems — including the weight mechanic and hazard interactions — which allowed me to clearly visualize and understand how gameplay elements connect and respond to each other.
